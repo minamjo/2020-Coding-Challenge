@@ -1,4 +1,4 @@
-// function that creates scoreboard
+// function creates scoreboard
 // empties out the teams div and fills with the scoreboard list and calls addTeamView using the info from scoreboard
 function display_scoreboard(scoreboard){
   $("#teams").empty();
@@ -26,6 +26,7 @@ function addTeamView(id, name, score){
   $("#teams").append(team_template);
 }
 
+// function for increasing score
 function increase_score(id){
   var team_id = {"id": id}
   $.ajax({

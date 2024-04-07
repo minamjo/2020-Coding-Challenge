@@ -58,6 +58,7 @@ def increase_score():
 def sort_scoreboard():
     global scoreboard
     p = 0
+    # using selection sort
     while p < len(scoreboard):
 
     #     find min
